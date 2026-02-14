@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 951639140}
   - component: {fileID: 951639139}
   m_Layer: 5
-  m_Name: Like
+  m_Name: Approve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -417,7 +417,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 951639140}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085555864}
+        m_TargetAssemblyTypeName: ButtonsLogic, Assembly-CSharp
+        m_MethodName: OnClickApprove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &951639140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +480,7 @@ GameObject:
   - component: {fileID: 1085555862}
   - component: {fileID: 1085555861}
   - component: {fileID: 1085555860}
+  - component: {fileID: 1085555864}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -558,6 +571,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1085555864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085555859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6320b4d82662fa24aaf062c3baac2f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonsLogic
+  images:
+  - {fileID: -2470614938961805849, guid: 8e179b20db5e6034f800ee9d811ceac2, type: 3}
+  - {fileID: 7093366098652639363, guid: b47249f885dd413488102672d338a957, type: 3}
+  - {fileID: 2433553667674190967, guid: d4d51ba7c740a9e45bf952426307d549, type: 3}
+  MainImage: {fileID: 1560008909}
+  CurrentImage: 0
 --- !u!1 &1135135081
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +602,7 @@ GameObject:
   - component: {fileID: 1135135084}
   - component: {fileID: 1135135083}
   m_Layer: 5
-  m_Name: DontLike
+  m_Name: Reject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +671,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1135135084}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085555864}
+        m_TargetAssemblyTypeName: ButtonsLogic, Assembly-CSharp
+        m_MethodName: OnClickReject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1135135084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,12 +858,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: abc57607e31547149b741a12e352bc4f, type: 3}
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 78
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -969,19 +1012,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: abc57607e31547149b741a12e352bc4f, type: 3}
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 7
+    m_MaxSize: 78
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u041E\u0442\u043A\u043B\u043E\u043D\u0438\u0442\u044C"
 --- !u!222 &2143517836
 CanvasRenderer:
   m_ObjectHideFlags: 0
