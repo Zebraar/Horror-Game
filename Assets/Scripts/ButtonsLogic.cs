@@ -9,6 +9,11 @@ public class ButtonsLogic : MonoBehaviour
     public Image MainImage;
     public int CurrentImage = 0;
 
+    void Start()
+    {
+        MainImage.GetComponent<Image>().sprite = Memasiki[CurrentImage];
+    }
+
     public void OnClickApprove()
     {
         CurrentImage++;
