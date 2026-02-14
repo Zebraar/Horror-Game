@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonsLogic : MonoBehaviour
+public class UpvoteLogic : MonoBehaviour
 {
 
     public Sprite[] images;
