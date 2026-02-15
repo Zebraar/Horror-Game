@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ButtonsLogic : MonoBehaviour
 {
 
     public Sprite[] Memasiki;
-    public Sprite[] Scary;
+    public Sprite[] ScaryImages;
+    public Sprite[] NormalImages;
     public Image MainImage;
     public int CurrentImage = 0;
+    private System.Random rnd = new System.Random();
+    private int ShowNormalImageChance = 0;
 
     void Start()
     {
@@ -17,6 +21,12 @@ public class ButtonsLogic : MonoBehaviour
     public void OnClickApprove()
     {
         CurrentImage++;
+        ShowNormalImageChance = rnd.Next(10);
+        Debug.Log("Шанс показа обычного изображения: " + ShowNormalImageChance);
+        if(ShowNormalImageChance == 4)
+        {
+            MainImage.GetComponent<Image>().sprite = NormalImages[CurrentImage];
+        }
         if(CurrentImage >= Memasiki.Length)
         {
             CurrentImage = 0;

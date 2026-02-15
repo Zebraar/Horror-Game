@@ -607,9 +607,20 @@ MonoBehaviour:
   - {fileID: 2465984850535148937, guid: 9793aa6729dd60f4494b1c8b31e55ed6, type: 3}
   - {fileID: 8832155982457136482, guid: 2c6657f182f71cb4b9f4fc1c2bddfbca, type: 3}
   - {fileID: -4456048082351356531, guid: 1caf9a459a9d7f3479511939c9d794c9, type: 3}
-  Scary:
+  ScaryImages:
   - {fileID: 7271817740714350981, guid: 90783c9eac189d64997da666e41dddd9, type: 3}
   - {fileID: 6763957118287748423, guid: a90c381c7b5e8ac4b8abce5055f8adf0, type: 3}
+  NormalImages:
+  - {fileID: -9023395262183731408, guid: 878e0b98e2b45e845b2958d469f54ffc, type: 3}
+  - {fileID: -2180979825983893314, guid: 9ecbae915c64fa74d9a198bee64219b9, type: 3}
+  - {fileID: 1531230764261695588, guid: 8696c4a9743400c47aa68ec529444794, type: 3}
+  - {fileID: 1964478189606690963, guid: d0daffb3f0fee354b953c34a906861b3, type: 3}
+  - {fileID: -7898075212633939514, guid: d1069b01f49512e429f2a9534651d95e, type: 3}
+  - {fileID: -8664176253125655189, guid: 2e56cea5607fdfb4d9befcf320fe41ce, type: 3}
+  - {fileID: 4304449745933054201, guid: 55417b81a11997b42b29ceab857f883c, type: 3}
+  - {fileID: 7239922918189634384, guid: 88d8745cd112a224089563e5a43b84bc, type: 3}
+  - {fileID: -2343820399353160195, guid: b451a87345df48f41a45dad24629a3d3, type: 3}
+  - {fileID: 3571236084507413887, guid: 12ad323d1ffdbcd4fa76cdc64682f95f, type: 3}
   MainImage: {fileID: 1560008909}
   CurrentImage: 0
 --- !u!1 &1135135081
