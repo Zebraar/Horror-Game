@@ -21,9 +21,9 @@ public class ButtonsLogic : MonoBehaviour
     public void OnClickApprove()
     {
         CurrentImage++;
-        ShowNormalImageChance = rnd.Next(5);
+        ShowNormalImageChance = rnd.Next(2);
         Debug.Log("Шанс показа обычного изображения: " + ShowNormalImageChance);
-        if(ShowNormalImageChance == 4)
+        if(ShowNormalImageChance == 1)
         {
             if(CurrentImage >= NormalImages.Length)
             {
@@ -50,6 +50,20 @@ public class ButtonsLogic : MonoBehaviour
     public void OnClickReject()
     {
         CurrentImage++;
+        ShowNormalImageChance = rnd.Next(2);
+        Debug.Log("Шанс показа обычного изображения: " + ShowNormalImageChance);
+        if(ShowNormalImageChance == 1)
+        {
+            if(CurrentImage >= NormalImages.Length)
+            {
+                CurrentImage = 0;
+                MainImage.GetComponent<Image>().sprite = NormalImages[CurrentImage];
+            } else
+            {
+                MainImage.GetComponent<Image>().sprite = NormalImages[CurrentImage];
+            }
+            
+        }
         if(CurrentImage >= Memasiki.Length)
         {
             CurrentImage = 0;
