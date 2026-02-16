@@ -5,20 +5,22 @@ public class YouLie : MonoBehaviour
 {
     
     public GameObject Text;
+    public Transform canvasTransform; 
     private System.Random rnd = new System.Random();
     int x = 0;
     int y = 0;
     void Start()
     {
-        StartCoroutine(WaitAndDoLie(0.3f)); 
+        StartCoroutine(WaitAndDoLie(0.05f)); 
     }
     public void YouLiee()
     {
             
             int x = rnd.Next(-750, 750);
             int y = rnd.Next(-350, 350);
-            Instantiate(Text, new Vector3(x, y, 0), Quaternion.identity);
-            WaitAndDoLie(0.3f);
+            GameObject newText = Instantiate(Text, canvasTransform);
+            newText.transform.localPosition = new Vector3(x, y, 0);
+            StartCoroutine(WaitAndDoLie(0.05f)); 
     }
 
     IEnumerator WaitAndDoLie(float delay)

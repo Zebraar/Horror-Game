@@ -875,6 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YouLie
   Text: {fileID: 2611088183297417888}
+  canvasTransform: {fileID: 1085555863}
 --- !u!1 &1135135081
 GameObject:
   m_ObjectHideFlags: 0
