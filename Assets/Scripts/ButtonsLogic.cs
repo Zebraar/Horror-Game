@@ -9,7 +9,7 @@ public class ButtonsLogic : MonoBehaviour
     public Sprite[] NormalImages;
     public Image MainImage;
     private AspectRatioFitter aspectFitter;
-    public YouLie lie;
+    public YouLie lie; // Ты это видишь?
     
     private int CurrentImage = 0;
     private System.Random rnd = new System.Random();
@@ -29,13 +29,11 @@ public class ButtonsLogic : MonoBehaviour
             lie.StartLie();
         }
         NextImage();
-        Debug.Log("Одобрили изображение");
     }
 
     public void OnClickReject()
     {        
         NextImage();
-        Debug.Log("Отклонили изображение");
     }
 
     private void NextImage()
@@ -49,7 +47,6 @@ public class ButtonsLogic : MonoBehaviour
     {
         int chance = rnd.Next(2); 
         int ShowScaryImageChance = rnd.Next(Mathf.Max(1, ScaryChance));
-        Debug.Log("Шанс (1 = Normal): " + chance);
 
         Sprite selectedSprite = null;
 
