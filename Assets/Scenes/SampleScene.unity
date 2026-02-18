@@ -863,6 +863,7 @@ MonoBehaviour:
   - {fileID: 5127144823286872960, guid: 44a539f70d7212d41a79f264e03f646a, type: 3}
   MainImage: {fileID: 1560008909}
   lie: {fileID: 1085555865}
+  soundsControl: {fileID: 1743826420}
   TotalSkippedImages: 0
 --- !u!114 &1085555865
 MonoBehaviour:
@@ -1706,7 +1707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundsControl
   audioSource: {fileID: 1743826418}
-  soundClip: {fileID: 8300000, guid: 331fc71685506474aa1ef56f1391f970, type: 3}
+  ClickSound: {fileID: 8300000, guid: 31c54dcc08e33974a8fbcf6573380119, type: 3}
 --- !u!1 &1797594792
 GameObject:
   m_ObjectHideFlags: 0
